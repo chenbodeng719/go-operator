@@ -1,0 +1,14 @@
+apiVersion: cnat.programming-kubernetes.info/v1alpha1
+kind: At
+metadata:
+  labels:
+    app.kubernetes.io/name: at
+    app.kubernetes.io/instance: at-sample
+    app.kubernetes.io/part-of: go-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: go-operator
+  name: at-sample
+spec:
+  # TODO(user): Add fields here
+  schedule: "2022-12-22T07:25:00Z"
+  command: "echo man"
